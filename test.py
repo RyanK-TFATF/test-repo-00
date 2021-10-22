@@ -4,11 +4,12 @@ import random
 
 print("Time to roll the dice!\n") # Fixed a typo. 
 x = random.randint(1, 100)
-y = random.randint(-1, -100) # Is this right?
+y = random.randint(1, 100) # Is this right?
+# No, it wasn't right.  Thank you for catching it! 
 
 
 
 while x != y:
-	print(f"x equals [x] and y equals [y].\n")
+	print(f"x equals {x} and y equals {y}.\n")  # The variable formatting was right though.  Thanks! 
 	x = random.randint(1, 100)
-	y = random.randint(-1, -100) # I don't think this is right.  Won't it get stuck in a loop?  There's no chance they will ever be equal.
+	y = random.randint(1, 100) # I don't think this is right.  Won't it get stuck in a loop?  There's no chance they will ever be equal.
